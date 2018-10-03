@@ -35,7 +35,8 @@ As a result of this project, developers may manage user access easily. Additiona
     - create your own `application.properties` file and save it into your project root path with following details:
 
     ```
-	keycloak.auth-server-url=https://<keycloak-domine>/auth/
+	
+    keycloak.auth-server-url=https://<keycloak-domain>/auth/
 
     keycloak.realm=TestingRealm
     keycloak.resource=testing-cli
