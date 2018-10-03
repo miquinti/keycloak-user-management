@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<title>keycloak-user-management Example</title>
+
+</head>
+<body>
+	<div id="loggedUserDetails" style="float: right">
+		<div style="display: none">
+			<span id="h_userId" th:text="${userId}"></span> <span id="h_userName"
+				th:text="${userName}"></span>
+		</div>
+		<div>
+			<a href="/profile" target="_blank"> User name and role: <span
+				th:text="${userFullName}" title="Click to access to your profile."></span>
+				<span th:text="${roles}"></span>
+			</a>
+		</div>
+		<div>
+			<a href="/logout" title="Click to close your session.">Logout</a>
+		</div>
+		<div>
+			<a href="/administration" target="_blank"
+				title="Click to manage users."> Administration</a>
+		</div>
+	</div>
+
+	<div id="mainContent"
+		style="margin: 0 auto; width: 80%; padding: 70px 0; text-align: center;">
+		<h1>Welcome to keycloak-user-management Example</h1>
+		<h2>Type Your content here!</h2>
+	</div>
+</body>
+</html>
