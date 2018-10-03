@@ -1,6 +1,8 @@
 # keycloak-user-manament
 Main application to manage user credential using keycloack: User Login, User registration and User profile. This web application conects to a keycloak server and display a Login interface, new user registration and user profile or user account access. Additionaly, the logued user can logout at any time (logout functionality).
 
+As a result of this project, developers may manage user access easily. Additionally, to adapt the interfaces desing to company/project requirements see wiki of this project (Customization by using Keycloak Thems).
+
 # Functionalities
 - User Login
 - User registration: Set up a new user
