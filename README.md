@@ -1,5 +1,7 @@
-# keycloak-user-manament
-Manin application to manage user credential using keycloack: User Login, User registration and User profile
+# keycloak-user-management
+Main application to manage user credential using keycloack and its Spring Boot Adapter: User Login, User registration and User profile. This web application conects to a keycloak server and display a Login interface, new user registration and user profile or user account access. Additionaly, the logued user can logout at any time (logout functionality).
+
+As a result of this project, developers may manage user access easily. Additionally, to adapt the interfaces desing to company/project requirements see wiki of this project (Customization by using Keycloak Thems).
 
 # Functionalities
 - User Login
@@ -7,8 +9,8 @@ Manin application to manage user credential using keycloack: User Login, User re
 - User profile: Users are allowed to change their details (personal details, password, etc.)
 - Authorizations: Using application.properties file, users will be allowed to access (or not) to any endpoint
 
-# Preconfitions
-# Keycloak Server configuration
+# Preconditions
+## Keycloak Server configuration
 - Setting Up a Keycloak Server: See full details here: - http://www.keycloak.org/docs/latest/getting_started/index.html
 	- Create admin user
 		- /opt/wildly/bin/add-user-keycloak -u admin -p password
@@ -24,15 +26,17 @@ Manin application to manage user credential using keycloack: User Login, User re
 		- See details: https://www.keycloak.org/docs/3.2/server_admin/topics/roles.html
 		- Go to "Default Roles" tab and Set up this role ("testing-role") as default (to avoid problems)
 
-# keycloak-user-manament Installation
+# Installation and Execution
+## Installation
 - Clone (or upload) repository from here: https://github.com/miquinti/keycloak-user-management.git
 
-# keycloak-user-manament Execution
+## Execution
 - Set up properties file
     - create your own `application.properties` file and save it into your project root path with following details:
 
     ```
-	keycloak.auth-server-url=https://<keycloak-domine>/auth/
+	
+    keycloak.auth-server-url=https://<keycloak-domain>/auth/
 
     keycloak.realm=TestingRealm
     keycloak.resource=testing-cli
@@ -53,13 +57,13 @@ Manin application to manage user credential using keycloack: User Login, User re
 
 - From Eclipse IDE
     - Right botton on project -> run as -> Spring boot
-	- Go to your browser and type <localhost:8080>
+	- Go to your browser and type http://localhost:8080
 	
 - From command line
     - `run mvn package` from the command line into your project root to generate jar file
     - in the target directory, you should see projectName-0.0.1-SNAPSHOT
 	- `java -jar projetName-0.0.1-SNAPSHOT.java`
-	- Go to your browser and type <localhost:8080>
+	- Go to your browser and type http://localhost:8080
 	
 
 # Technology
