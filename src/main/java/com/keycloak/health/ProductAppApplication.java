@@ -16,8 +16,7 @@
  * information in the project root.
  * 
  * @author  Miriam Quintero
- *          Atos Research and Innovation, Atos SPAIN SA
- *          e-mail ana.quintero@atos.net
+ *         miquinti@gmail.com
  * 
  * @date 02/10/2018
  * Main App entrance
